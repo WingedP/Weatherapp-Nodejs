@@ -1,0 +1,17 @@
+<div class="weathersection">
+
+<h1>Your city: {{city}}</h1>
+<p>    
+DEBUG=weatherapp-darksky:* npm run dev
+</p>   
+
+{{#if temp}}
+<h2>temperature:{{temp}}</h2>
+{{#if feelslike}}
+<h3>feel like: {{feelslike}}</h3>
+{{/if}} 
+<img class="imgicon" src='https://darksky.net/images/weather-icons/{{icon}}.png'>
+<div class="summarytext">{{summary}}</div>
+{{/if}}
+
+</div>
